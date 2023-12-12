@@ -471,6 +471,21 @@ svg{
     border-radius: 5px; /* Optional: Add border-radius for rounded corners */
 }
 
+/* whatsapp button */
+.whatsapp-button {
+  background-color: var(--color-pink-light);
+  color: var(--color-text-light);
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: darken(var(--color-pink-light), 10%); /* Adjust as needed */
+}
 /* Media Query for Responsive Design */
 @media (max-width: 768px) {
     .project-container {

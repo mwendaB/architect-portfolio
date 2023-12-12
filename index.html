@@ -79,8 +79,8 @@
 
           <div class="section-detail-wrapper">
             <!-- <h3 class="section-heading">Hello!</h3> -->
-            <p class="section-text">Hi there 👋! </p>
-            <p class="section-text">I love creating art and playing with my cats! I also like drinking bubble tea and going for hikes! Totally hippie lol ✌️. Welcome to my portfolio!</p>
+            <p class="section-text">Hi there 👋! I'm Mishi Naisuyasuy Chiveli, a designer whose creative journey started over a decade ago, sparked by a deep love for art and enriched by the vibrant world of architecture. I'm not just a designer; I'm a lifelong learner passionate about exploring various fields. </p>
+            <p class="section-text">My skill set includes proficiency in Pro Create, Adobe Illustrator, Archicad, Sketching, Adobe Photoshop, and Blender. What gets my creative juices flowing? My love for learning extends into seemingly unrelated and related fields, offering a versatile perspective. I have a particular fondness for using contrast and color to create impactful designs. ✌️. Welcome to my portfolio!</p>
             
             <!-- Download CV Button -->
             <button id="downloadButton">Download CV</button>
@@ -88,13 +88,13 @@
             <script>
                 document.getElementById("downloadButton").addEventListener("click", function() {
                     // Replace 'path/to/your/cv.pdf' with the actual path to your CV file
-                    var cvPath = 'cv.pdf';
+                    var cvPath = 'mishichiveli.pdf';
                     
                     // Creating a temporary link element
                     var link = document.createElement('a');
                     
                     // Setting the download attribute with the desired file name
-                    link.download = 'cv.pdf';
+                    link.download = 'mishichiveli.pdf';
                     
                     // Creating a URL for your CV file
                     link.href = cvPath;
@@ -177,6 +177,20 @@
             <p class="section-text">https://www.linkedin.com/in/naisuyasuy-chiveli-120689163</p>
             <h3 class="section-heading">Instagram</h3>
             <p class="section-text">https://www.instagram.com/naisuyasuy_art/</p>
+            <h3 class="section-heading">Whatsapp</h3>
+            <button class="whatsapp-button" onclick="redirectToWhatsApp()">Contact me on WhatsApp</button>
+            <script>
+              function redirectToWhatsApp() {
+                  // Replace the '1234567890' with your actual WhatsApp number including the country code
+                  var phoneNumber = '+254799751449';
+          
+                  // Construct the WhatsApp link
+                  var whatsappLink = 'https://wa.me/' + phoneNumber;
+          
+                  // Redirect to the WhatsApp link
+                  window.location.href = whatsappLink;
+              }
+          </script>
           </div>
         </section>
 
