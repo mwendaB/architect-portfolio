@@ -442,6 +442,46 @@ svg{
   background-color: var(--color-green);
 }
 
+  /* Button Styling */
+  #downloadButton {
+    background-color: var(--color-pink-light);
+    color: var(--color-text-light);
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  #downloadButton:hover {
+    background-color: darken(var(--color-pink-light), 10%);
+    /* You can use a library like Sass or Less for the darken function or manually adjust the color */
+  }
+
+  /* pictures section */
+  .project-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Adjust as needed for spacing between image pairs */
+}
+
+.project-container img {
+    width: 40%; /* Adjust as needed for the desired width of each image */
+    border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .project-container {
+        flex-direction: column; /* Stack images vertically on small screens */
+    }
+
+    .project-container img {
+        width: 100%; /* Make images full width on small screens */
+        margin-bottom: 10px; /* Add spacing between stacked images */
+    }
+}
 
 /* Media Queries */
 

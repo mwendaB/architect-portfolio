@@ -81,11 +81,36 @@
             <!-- <h3 class="section-heading">Hello!</h3> -->
             <p class="section-text">Hi there 👋! </p>
             <p class="section-text">I love creating art and playing with my cats! I also like drinking bubble tea and going for hikes! Totally hippie lol ✌️. Welcome to my portfolio!</p>
-            <!-- <h3 class="section-heading">Lorem Ipsum</h3>
-            <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic expedita qui quae officiis, magni velit iste repellat consequuntur temporibus. Quasi atque officia iste beatae rerum, harum itaque accusamus. At, natus?</p> -->
-            <!-- <h3 class="section-heading">Lorem Ipsum</h3>
-            <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic expedita qui quae officiis, magni velit iste repellat consequuntur temporibus. Quasi atque officia iste beatae rerum, harum itaque accusamus. At, natus?</p> -->
-          </div>
+            
+            <!-- Download CV Button -->
+            <button id="downloadButton">Download CV</button>
+        
+            <script>
+                document.getElementById("downloadButton").addEventListener("click", function() {
+                    // Replace 'path/to/your/cv.pdf' with the actual path to your CV file
+                    var cvPath = 'cv.pdf';
+                    
+                    // Creating a temporary link element
+                    var link = document.createElement('a');
+                    
+                    // Setting the download attribute with the desired file name
+                    link.download = 'cv.pdf';
+                    
+                    // Creating a URL for your CV file
+                    link.href = cvPath;
+                    
+                    // Appending the link to the document body
+                    document.body.appendChild(link);
+                    
+                    // Triggering a click event on the link element to initiate the download
+                    link.click();
+                    
+                    // Removing the link element from the document
+                    document.body.removeChild(link);
+                });
+            </script>
+        </div>
+                
         </section>
 
         <div class="second-move section-margin"></div>
@@ -106,13 +131,24 @@
           </div>
 
           <div class="section-detail-wrapper">
-            <h3 class="section-heading">Candycane Village</h3>
-            <p class="section-text">This project is in progress but it's about a super colorful village where the entire world including the people are candies. So far the story is that they are set out to explore their "space" only to realize it's a human that will try to destroy them.</p>
-            <h3 class="section-heading">Rebecca's Reddish Radishes</h3>
-            <p class="section-text">Oh what's that? Why, it's a red radish! Oop, another one! In this playful and comedy animation, Rebecca, a young farmer, decided to plant radishes for the first time, but there is a big twist!</p>
-            <h3 class="section-heading">Flora</h3>
-            <p class="section-text">A heartwarming story about a little orphan girl who tries to find her way back home.</p>
+            <div class="project-container">
+                <img src="assets/cat-han-W_5Eakb1598-unsplash.jpg" alt="Project 1">
+                <img src="assets/enchanted.jpg" alt="Project 2">
+            </div>
+            <div class="project-container">
+                <img src="assets/interior decor mum and baby.jpg" alt="Project 3">
+                <img src="assets/interior decor.jpg" alt="Project 4">
+            </div>
+            <div class="project-container">
+                <img src="assets/space.jpg" alt="Project 5">
+                <img src="assets/Untitled-1.jpg" alt="Project 6">
+            </div>
+            <div class="project-container">
+              <img src="assets/Pastriesadvert.jpg" alt="Project 5">
+              <img src="assets/Menupage_page-0001.jpg" alt="Project 6">
           </div>
+        </div>
+        
         </section>
 
         <div class="third-move section-margin"></div>
